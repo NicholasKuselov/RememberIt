@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     
+                    xmlns:v="http://schemas.microsoft.com/netfx/2009/xaml/presentation">
+    
+    <v:SolidColorBrush x:Key="Color_MainWindow" Color="#FF121415"/>
+    <v:SolidColorBrush x:Key="Color_MainWindowSecondary" Color="#1b1c24"/>
+    <v:SolidColorBrush x:Key="Color_MainWindowTopBar" Color="#FF1C1E1F"/>
+
+    <v:SolidColorBrush x:Key="Color_ForegroundSecondary" Color="#8d8d91"/>
+
+    <v:SolidColorBrush x:Key="Color_CardTextBox" Color="#FF212325"/>
+
+    <v:SolidColorBrush x:Key="Color_DeleteButtonBackground" Color="#fc0000"/>
+    <v:SolidColorBrush x:Key="Color_DeleteButtonBackgroundFocus" Color="#fc3d3d"/>
+    <v:SolidColorBrush x:Key="Color_DeleteButtonBackgroundPress" Color="#820303"/>
+
+
+
+    <v:SolidColorBrush x:Key="Color_AddButtonBackground" Color="#15a100"/>
+    <v:SolidColorBrush x:Key="Color_AddButtonBackgroundFocus" Color="#1ac900"/>
+    <v:SolidColorBrush x:Key="Color_AddButtonBackgroundPress" Color="#0f7500"/>
+
+
+    <v:SolidColorBrush x:Key="Color_WindowControlButtonsFocus" Color="#66FFFFFF"/>
+    <v:SolidColorBrush x:Key="Color_WindowControlButtonsPressed" Color="#CCFFFFFF"/>
+
+    <v:SolidColorBrush x:Key="Color_ProgramNameLaberForecolor" Color="White"/>
+    <v:SolidColorBrush x:Key="Color_ProgramNameSecondaryLaberForecolor" Color="#b5b5b5"/>
+
+    <v:SolidColorBrush x:Key="Color_ListBoxMouseOverBorder" Color="#edeeee"/>
+
+    <v:SolidColorBrush x:Key="Color_lb_buttonBackground" Color="#242831"/>
+    <v:SolidColorBrush x:Key="Color_lb_buttonBackgroundFocus" Color="#20242e"/>
+    <v:SolidColorBrush x:Key="Color_lb_Border" Color="#8c8c8c"/>
+    <v:SolidColorBrush x:Key="Color_lb_BorderFocus" Color="#d9d9d9"/>
+    <v:SolidColorBrush x:Key="Color_lb_BorderPress" Color="#61ff3d"/>
+    <v:SolidColorBrush x:Key="Color_lb_Background" Color="#181c26"/>
+
+    <v:SolidColorBrush x:Key="Color_DarkBlue1" Color="#131629"/>
+</ResourceDictionary>

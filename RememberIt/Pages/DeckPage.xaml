@@ -1,0 +1,60 @@
+﻿<Page x:Class="RememberIt.Pages.DeckPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RememberIt.Pages" xmlns:viewmodels="clr-namespace:RememberIt.ViewModels" xmlns:converters="clr-namespace:RememberIt.Converters"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DeckPage">
+    <Page.DataContext>
+        <viewmodels:DeckPageVM></viewmodels:DeckPageVM>
+    </Page.DataContext>
+    
+    <Grid Background="{DynamicResource Color_MainWindow}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <converters:IndexConverter x:Key="IndexConverter"/>
+        </Grid.Resources>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="{Binding CurrentCardIndex, Converter={StaticResource IndexConverter}}"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Padding="0" Foreground="White"/>
+            <Label Content="{DynamicResource lOf}"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" Margin="5,0,5,0" HorizontalAlignment="Left" Foreground="White"/>
+            <Label Content="{Binding Cards.Count}"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Padding="0" Foreground="White"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="8,8,8,8" Background="{DynamicResource Color_CardTextBox}">
+                <TextBlock   Text="{Binding CurrentCard.FrontName}" TextAlignment="Center" Background="Transparent" FontSize="22" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="8,8,8,8" Background="{DynamicResource Color_CardTextBox}">
+                <TextBlock   Text="{Binding CurrentCard.BackName}" TextAlignment="Center" Background="Transparent" Visibility="{Binding RememberButtonsVisibility}" FontSize="22" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Width="100" Height="30" Command="{Binding OpenNextCard}" Template="{DynamicResource AddButtonGreen}" Content="{DynamicResource bNext}"/>
+            <Button Grid.Column="1" Width="120" Height="30" Command="{Binding Remember}" Template="{DynamicResource TranparentButton}" Content="{DynamicResource bRemember}" Visibility="{Binding RememberButtonsVisibility}"/>
+            <Button Grid.Column="2" Width="100" Height="30" Command="{Binding ShowBackFront}" Template="{DynamicResource TranparentButton}" Content="{DynamicResource bShowCard}" Visibility="{Binding ShowButtonVivsibility}"/>
+            <Button Grid.Column="3" Width="120" Height="30" Command="{Binding NotRemember}" Template="{DynamicResource TranparentButton}" Content="{DynamicResource bNotRemember}" Visibility="{Binding RememberButtonsVisibility}"/>
+            <Button Grid.Column="4" Width="100" Height="30" Command="{Binding ExitCard}" Template="{DynamicResource DeleteButton}" Content="{DynamicResource bExit}"/>
+        </Grid>
+    </Grid>
+</Page>

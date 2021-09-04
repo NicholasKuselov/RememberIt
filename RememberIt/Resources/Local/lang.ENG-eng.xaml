@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="ProgramName">Remember It</v:String>
+    <v:String x:Key="ProgramNameLocal">Remember It</v:String>
+    
+    <!--MainWindow-->
+    <v:String x:Key="bStart">Start</v:String>
+    <v:String x:Key="bStat">Stat</v:String>
+    <v:String x:Key="bCreateDeck">Create New Deck</v:String>
+    <v:String x:Key="lDecks">DECKS</v:String>
+    <v:String x:Key="bDeleteDeck">Delete deck</v:String>
+    <v:String x:Key="lAllRememberedCards">All remembered cards count :</v:String>
+    <v:String x:Key="lAllTodayCheckedCards">Today checked cards count :</v:String>
+    <v:String x:Key="lTodayRememberedCards">Today remembered cards count :</v:String>
+    <v:String x:Key="lNeedCardsCount">Need cards count :</v:String>
+
+
+    <!--Decks Page-->
+    <v:String x:Key="lDeckName">Deck name :</v:String>
+    <v:String x:Key="lDecklength">Card count :</v:String>
+    <v:String x:Key="lDeckRememberedCardsCount">Remembered cards count :</v:String>
+
+    <!--Deck Page-->
+    <v:String x:Key="lOf"> card of</v:String>
+    <v:String x:Key="bShowCard">Show</v:String>
+    <v:String x:Key="bRemember">I remembered</v:String>
+    <v:String x:Key="bNotRemember">I didn't remember</v:String>
+    <v:String x:Key="bNext">Next card</v:String>
+    <v:String x:Key="bExit">Exit</v:String>
+    <v:String x:Key="lAllDecksCount">All decks count :</v:String>
+    <v:String x:Key="lAllCardsCount">All cards count :</v:String>
+    <v:String x:Key="lMessage">Message</v:String>
+    <v:String x:Key="lEndMessage">You have completed this deck!</v:String>
+
+    <!--Deck Creating Window-->
+    <v:String x:Key="lDeckNameCreating">Name of deck :</v:String>
+    <v:String x:Key="lCardFront">Front text :</v:String>
+    <v:String x:Key="lCardBack">Back text :</v:String>
+    <v:String x:Key="bAddCard">Add Card</v:String>
+    <v:String x:Key="lCards">Cards</v:String>
+    <v:String x:Key="bAddDeck">Add Deck</v:String>
+    <v:String x:Key="bDeleteCard">Delete Card</v:String>
+
+    <!--Warnings-->
+    <v:String x:Key="WarningTitle">Warning</v:String>
+    <v:String x:Key="WDeckRefresh">Are you sure you want to reset the progress in this deck?</v:String>
+    <v:String x:Key="WDeleteDeck">Delete deck :</v:String>
+    <v:String x:Key="WLowCardsCount">Add more cards</v:String>
+    <v:String x:Key="WToShortDeckName">Deck name too short</v:String>
+    <v:String x:Key="WNoFrontText">Missing front text</v:String>
+    <v:String x:Key="WNoBacktext">Missing back text</v:String>
+    <v:String x:Key="WDeckNameExist">A deck with the same name already exists.</v:String>
+    <v:String x:Key="WSelectedDeckAllRemembered">You have learned all the cards in the drawn deck. If you want to repeat a given deck, discard the deck progress.</v:String>
+    <v:String x:Key="WNoSelectedDeck">You haven't selected a deck!</v:String>
+
+
+</ResourceDictionary>
